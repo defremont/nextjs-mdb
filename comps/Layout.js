@@ -1,10 +1,12 @@
 import React from "react";
 import Header from "./Header";
+import Footer from "./Footer";
 import { MDBContainer, MDBRow, MDBCol } from "mdbreact";
 const layoutStyle = {};
 export default function Layout(props) {
   return (
 
+    <div>
     <MDBContainer style={layoutStyle}>
       <MDBRow>
         <MDBCol md="12">
@@ -45,5 +47,7 @@ export default function Layout(props) {
         `}
       </style>
     </MDBContainer>
+    
+    <Footer /></div>
   );
 }
