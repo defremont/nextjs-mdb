@@ -1,12 +1,18 @@
 import React from "react";
 import Header from "./Header";
-
+import { MDBContainer, MDBRow, MDBCol } from "mdbreact";
 const layoutStyle = {};
 export default function Layout(props) {
   return (
-    <div style={layoutStyle}>
+
+    <MDBContainer style={layoutStyle}>
+      <MDBRow>
+        <MDBCol md="12">
+          
       <Header />
       {props.children}
+        </MDBCol>
+      </MDBRow>
       <style jsx global>
         {`
           body {
@@ -38,6 +44,6 @@ export default function Layout(props) {
           }
         `}
       </style>
-    </div>
+    </MDBContainer>
   );
 }

@@ -16,16 +16,11 @@ import Cases from "../comps/Cases";
 import Projects from "../comps/Projects";
 
 const Index = () => (
-  <div>
     <Layout>
-      <MDBContainer fluid className="p-0">
-        <MDBRow>
-          <MDBCol>
-            <MDBJumbotron style={{ padding: 0 }}>
+            <MDBJumbotron className="z-depth-0" style={{     height: "100vh", backgroundColor: "#222" }} >
               <MDBCol
-                className="text-white text-center"
+                className="text-white text-left"
                 style={{
-                  backgroundImage: `url(https://mdbootstrap.com/img/Photos/Others/gradient1.jpg)`
                 }}
               >
                 <MDBCol className="py-5">
@@ -38,20 +33,16 @@ const Index = () => (
                     sit officia accusamus minus error nisi architecto nulla
                     ipsum dignissimos. Odit sed qui, dolorum!
                   </p>
-                  <MDBBtn outline color="white" className="mb-5">
+                  <MDBBtn outline color="white" className="mx-5 mb-5">
                     <MDBIcon icon="clone" className="mr-2" /> View project
                   </MDBBtn>
                 </MDBCol>
               </MDBCol>
             </MDBJumbotron>
-          </MDBCol>
-        </MDBRow>
-      </MDBContainer>
       <Cases />
       <Projects />
-    </Layout>
     <style jsx>{``}</style>
-  </div>
+    </Layout>
 );
 
 export default Index;

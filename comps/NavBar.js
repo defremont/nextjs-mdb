@@ -32,7 +32,7 @@ class Index extends React.Component {
 
   render() {
     return (
-      <MDBNavbar color="black" dark transparent expand="md">
+      <MDBNavbar className="z-depth-0" color="black" dark transparent expand="md">
         <MDBNavbarBrand>
           <img id="logo" src={logoSVG} alt="Logo SVG" width="60" />
         </MDBNavbarBrand>
