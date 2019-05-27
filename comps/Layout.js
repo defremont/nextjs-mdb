@@ -2,21 +2,20 @@ import React from "react";
 import Header from "./Header";
 import Footer from "./Footer";
 import { MDBContainer, MDBRow, MDBCol } from "mdbreact";
-const layoutStyle = {};
 export default function Layout(props) {
   return (
 
     <div>
-    <MDBContainer style={layoutStyle}>
-      <MDBRow>
-        <MDBCol md="12">
-          
-      <Header />
-      {props.children}
-        </MDBCol>
-      </MDBRow>
-      <style jsx global>
-        {`
+      <MDBContainer>
+        <MDBRow>
+          <MDBCol md="12">
+
+            <Header />
+            {props.children}
+          </MDBCol>
+        </MDBRow>
+        <style jsx global>
+          {`
           body {
             background: #222;
           }
@@ -45,9 +44,9 @@ export default function Layout(props) {
             font-family: "Droid Serif", serif;
           }
         `}
-      </style>
-    </MDBContainer>
-    
-    <Footer /></div>
+        </style>
+      </MDBContainer>
+
+      <Footer /></div>
   );
 }
