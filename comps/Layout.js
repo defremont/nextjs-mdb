@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "../comps/Footer";
 import { MDBContainer, MDBRow, MDBCol } from "mdbreact";
 export default function Layout(props) {
   return (
@@ -9,6 +10,7 @@ export default function Layout(props) {
         </MDBRow>
         <style jsx>{``}</style>
       </MDBContainer>
+      <Footer />
     </div>
   );
 }

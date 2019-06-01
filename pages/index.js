@@ -5,7 +5,6 @@ import Jumbotron from "../comps/Jumbotron";
 import Loader from "../comps/Loader";
 import React from "react";
 import Header from "../comps/Header";
-import Footer from "../comps/Footer";
 export default class extends React.Component {
   constructor(props) {
     super(props);
@@ -78,8 +77,6 @@ export default class extends React.Component {
               font-family: "Lato", sans-serif;
             }
           `}</style>
-
-          <Footer />
         </Layout>
       );
     } else {
