@@ -65,22 +65,17 @@ export default class extends React.Component {
             h5,
             h6 {
               color: #f1f1f1;
+              font-family: "Raleway", sans-serif;
             }
             .nav-item a {
-              font-family: "Oswald", sans-serif !important;
+              font-family: "Lato", sans-serif !important;
             }
-            h1,
-            h2,
-            h3,
-            h4,
-            h5,
-            h6,
             button {
-              font-family: "Oswald", sans-serif;
+              font-family: "Raleway", sans-serif;
             }
             p,
             a {
-              font-family: "Droid Serif", serif;
+              font-family: "Lato", sans-serif;
             }
           `}</style>
 

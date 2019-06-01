@@ -6,9 +6,8 @@ export default function Header() {
       <Head>
         <title>André Defrémont - Fullstack NodeJS Developer</title>
         <link
-          href="http://fonts.googleapis.com/css?family=Oswald:700|Droid+Serif:400,700italic"
+          href="https://fonts.googleapis.com/css?family=Lato|Raleway&display=swap"
           rel="stylesheet"
-          type="text/css"
         />
       </Head>
       <NavBar />
